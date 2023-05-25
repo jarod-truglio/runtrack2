@@ -8,7 +8,6 @@
 </head>
 <body>
     <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '<table>';
         echo '<tr><th>Argument</th><th>Valeur</th></tr>';
         
@@ -17,13 +16,6 @@
         }
         
         echo '</table>';
-    }
     ?>
-    <form action="" method="post">
-        <input type="text" name="field1" placeholder="Champ 1"><br>
-        <input type="text" name="field2" placeholder="Champ 2"><br>
-        <input type="text" name="field3" placeholder="Champ 3"><br>
-        <input type="submit" value="Envoyer">
-    </form>
 </body>
 </html>

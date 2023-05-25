@@ -8,16 +8,8 @@
 </head>
 <body>
     <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $count = count($_POST);
         echo "Le nombre d'arguments POST envoyé est : " . $count;
-    }
     ?>
-    <form action="" method="post">
-        <input type="text" name="field1" placeholder="Champ 1"><br>
-        <input type="text" name="field2" placeholder="Champ 2"><br>
-        <input type="text" name="field3" placeholder="Champ 3"><br>
-        <input type="submit" value="Envoyer">
-    </form>
 </body>
 </html>
